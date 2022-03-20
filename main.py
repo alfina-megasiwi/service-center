@@ -1,9 +1,10 @@
 from fastapi import FastAPI, File, UploadFile, status, HTTPException
 from fastapi.responses import FileResponse
-from schema import *
+from database.schema import *
 from typing import List
-from database import SessionLocal
-import models, random, string, shutil, os
+from database.database import SessionLocal
+import database.models as models
+import random, string, shutil, os
 
 app = FastAPI()
 db = SessionLocal()
