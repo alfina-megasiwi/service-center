@@ -102,6 +102,7 @@ def delete_service_data_by_case_id(case_id:str):
         if(data_to_delete.foto_unit != ""):
             os.remove(f"pic/{data_to_delete.foto_unit}")
 
+        db.delete(data_to_delete)
         return f"Service dengan case id {data_to_delete.case_id} telah dihapus"
     except:
         raise HTTPException(status_code=400, detail="Data service yang dicari tidak ada")
