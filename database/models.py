@@ -1,5 +1,5 @@
-from database import Base
-from sqlalchemy import String, Integer, Column
+from database.database import Base
+from sqlalchemy import String, Column
 
 class ServiceDatabase(Base):
     __tablename__ = "servicedatabase"
