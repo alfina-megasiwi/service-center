@@ -1,9 +1,9 @@
 from fastapi import FastAPI, File, UploadFile, status, HTTPException, Depends
 from fastapi.responses import FileResponse
 from typing import List
-from db.database import SessionLocal
-from db.schema import *
-import db.models as models
+from database import SessionLocal
+from schema import *
+import models as models
 import random, string, shutil, os
 from sqlalchemy.orm import Session
 
