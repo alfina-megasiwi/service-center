@@ -1,4 +1,5 @@
-requirements.txt
 .venv
+venv
 __pycache__
 .env
+locustfile.py
